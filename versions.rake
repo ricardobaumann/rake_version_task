@@ -1,5 +1,5 @@
 def valid? version
-  pattern = /^\d+\.\d+\.\d+(\-(dev|beta|rc\d+))?$/
+  pattern = /^\d+\.\d+\.\d+(\-(dev|beta|SNAPSHOT|RC\d+))?$/
   raise "Tried to set invalid version: #{version}" unless version =~ pattern
 end
 
